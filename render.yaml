@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: bot-keuangan
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot_keuangan.py
+    envVars:
+      - key: TELEGRAM_TOKEN
+        value: your_token_here
